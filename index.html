@@ -72,22 +72,22 @@
         }
 
         /* Verschiebung der Abschnitte */
-        section:nth-child(2) { /* Das zweite Feld beginnt links */
+        section:nth-child(2) {
             margin-left: 0;
             margin-right: auto;
         }
 
-        section:nth-child(3) { /* Das dritte Feld geht nach rechts */
+        section:nth-child(3) {
             margin-left: auto;
             margin-right: 0;
         }
 
-        section:nth-child(4) { /* Das vierte Feld geht wieder nach links */
+        section:nth-child(4) {
             margin-left: 0;
             margin-right: auto;
         }
 
-        section:nth-child(5) { /* Applikationen-Feld geht nach rechts */
+        section:nth-child(5) {
             margin-left: auto;
             margin-right: 0;
         }
@@ -187,82 +187,8 @@
 
     <main>
         <section id="about">
-            <img src="public/images/CN5A4937_Schweiz_35x45.jpg" alt="Mein Foto">
+            <img src="CN5A4937_Schweiz_35x45.jpg" alt="Mein Foto">
             <div>
                 <h2>Über mich</h2>
-                <p>Mein Name ist Patrik Hafner, und ich bin ein kreativer Applikationsentwickler mit einer Leidenschaft für IT-Lösungen. Mit meiner Erfahrung bringe ich Projekte auf den Punkt und finde innovative Ansätze.</p>
-            </div>
-        </section>
+                <p>Mein Name ist Patrik Hafner, und ich bin ein kreativer Applikationsentw
 
-        <section id="skills">
-            <div>
-                <h2>Fähigkeiten</h2>
-                <ul>
-                    <li>Java-Entwicklung</li>
-                    <li>HTML & CSS</li>
-                    <li>MySQL und Datenbankmanagement</li>
-                    <li>Agile Projektplanung</li>
-                    <li>Teamarbeit</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div>
-                <h2>Projekte</h2>
-                <ul>
-                    <li><strong>Mini-Task-Manager:</strong> Ein To-Do-Listen-Projekt</li>
-                    <li><strong>API-Datenanzeige:</strong> Wetter-App mit dynamischer Datenintegration</li>
-                    <li><strong>Code-Editor:</strong> Interaktiver HTML- und JS-Playground</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="applications">
-            <div>
-                <h2>Applikationen</h2>
-                <!-- Mini-Task-Manager -->
-                <div>
-                    <h3>Mini-Task-Manager</h3>
-                    <input type="text" id="taskInput" placeholder="Neue Aufgabe hinzufügen">
-                    <button onclick="addTask()">Hinzufügen</button>
-                    <ul id="taskList"></ul>
-                </div>
-
-                <!-- Wetter-App -->
-                <div>
-                    <h3>Wetter-App</h3>
-                    <input type="text" id="cityInput" placeholder="Stadt eingeben">
-                    <button onclick="getWeather()">Wetter anzeigen</button>
-                    <div id="weatherResult"></div>
-                </div>
-
-                <!-- Code-Editor -->
-                <div>
-                    <h3>Code-Editor</h3>
-                    <textarea id="htmlCode" placeholder="HTML-Code schreiben"></textarea>
-                    <textarea id="jsCode" placeholder="JavaScript-Code schreiben"></textarea>
-                    <button onclick="runCode()">Ausführen</button>
-                    <iframe id="output"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div>
-                <h2>Kontakt</h2>
-                <p>Erreichen Sie mich über:</p>
-                <ul>
-                    <li>Email: <a href="mailto:hafner312@gmail.com">hafner312@gmail.com</a></li>
-                    <li>Telefon: +41 79 501 26 53</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank">Mein LinkedIn-Profil</a></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        &copy; 2025 Patrik Hafner. Alle Rechte vorbehalten.
-    </footer>
-</body>
-</html>
