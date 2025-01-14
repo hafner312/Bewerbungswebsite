@@ -73,4 +73,173 @@
 
         /* Verschiebung der Abschnitte */
         section:nth-child(2) { margin-left: 0; margin-right: auto; }
-        section:nth-child(3) { margin-left: auto; m
+        section:nth-child(3) { margin-left: auto; margin-right: 0; }
+        section:nth-child(4) { margin-left: 0; margin-right: auto; }
+        section:nth-child(5) { margin-left: auto; margin-right: 0; }
+
+        /* Graue Balken für Skills und Projekte */
+        section div {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Foto im "Über mich"-Abschnitt */
+        section#about img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Applikationen-Feld */
+        section#applications {
+            background: #e3f2fd;
+            border: 2px solid #90caf9;
+            color: #1e88e5;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        button {
+            background: #1e88e5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        iframe {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            section { margin: 0 auto; width: 90%; }
+            section#about { flex-direction: column; text-align: center; }
+            section img { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Willkommen auf meiner Bewerbungsseite
+    </header>
+
+    <nav>
+        <a href="#about">Über mich</a>
+        <a href="#skills">Fähigkeiten</a>
+        <a href="#projects">Projekte</a>
+        <a href="#applications">Applikationen</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <main>
+        <!-- Über mich -->
+        <section id="about">
+            <img src="CN5A4937_Schweiz_35x45.jpg" alt="Mein Foto">
+            <div>
+                <h2>Über mich</h2>
+                <p>Mein Name ist Patrik Hafner, und ich bin ein kreativer Applikationsentwickler mit einer Leidenschaft für IT-Lösungen. Mit meiner Erfahrung bringe ich Projekte auf den Punkt und finde innovative Ansätze.</p>
+            </div>
+        </section>
+
+        <!-- Fähigkeiten -->
+        <section id="skills">
+            <div>
+                <h2>Fähigkeiten</h2>
+                <ul>
+                    <li>Java-Entwicklung</li>
+                    <li>HTML & CSS</li>
+                    <li>MySQL und Datenbankmanagement</li>
+                    <li>Agile Projektplanung</li>
+                    <li>Teamarbeit</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projekte -->
+        <section id="projects">
+            <div>
+                <h2>Projekte</h2>
+                <ul>
+                    <li><strong>Mini-Task-Manager:</strong> Ein To-Do-Listen-Projekt</li>
+                    <li><strong>API-Datenanzeige:</strong> Wetter-App mit dynamischer Datenintegration</li>
+                    <li><strong>Code-Editor:</strong> Interaktiver HTML- und JS-Playground</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Applikationen -->
+        <section id="applications">
+            <div>
+                <h2>Applikationen</h2>
+                <div>
+                    <h3>Mini-Task-Manager</h3>
+                    <input type="text" id="taskInput" placeholder="Neue Aufgabe hinzufügen">
+                    <button onclick="addTask()">Hinzufügen</button>
+                    <ul id="taskList"></ul>
+                </div>
+
+                <div>
+                    <h3>Wetter-App</h3>
+                    <input type="text" id="cityInput" placeholder="Stadt eingeben">
+                    <button onclick="getWeather()">Wetter anzeigen</button>
+                    <div id="weatherResult"></div>
+                </div>
+
+                <div>
+                    <h3>Code-Editor</h3>
+                    <textarea id="htmlCode" placeholder="HTML-Code schreiben"></textarea>
+                    <textarea id="jsCode" placeholder="JavaScript-Code schreiben"></textarea>
+                    <button onclick="runCode()">Ausführen</button>
+                    <iframe id="output"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section id="contact">
+            <div>
+                <h2>Kontakt</h2>
+                <p>Erreichen Sie mich über:</p>
+                <ul>
+                    <li>Email: <a href="mailto:hafner312@gmail.com">hafner312@gmail.com</a></li>
+                    <li>Telefon: +41 79 501 26 53</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank">Mein LinkedIn-Profil</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Patrik Hafner. Alle Rechte vorbehalten.
+    </footer>
+</body>
+</html>
